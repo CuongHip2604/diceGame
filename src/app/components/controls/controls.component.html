@@ -1,0 +1,9 @@
+<button class="control btn-new" (click)='handleNewGame()'><i class="ion-ios-plus-outline"></i>New game</button>
+<button class="control btn-roll" (click)='rollDice()'><i class="ion-ios-loop"></i>Roll dice</button>
+<button class="control btn-hold" (click)='hold()'><i class="ion-ios-download-outline"></i>Hold</button>
+
+<input type="number" placeholder="Final score" class="final-score"
+[(ngModel)]='finalScore'
+[disabled]='isPlaying'
+(input)='handleInput($event)'
+>

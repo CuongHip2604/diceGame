@@ -1,0 +1,14 @@
+<div class="wrapper-popap" [ngClass]="getClassPopap()">
+  <div class="rule">
+    <h3>Luật chơi</h3>
+    <h4>Điều 1:</h4>
+    <p>Người chơi sẽ điền số điểm cuối cùng vào ô FINALSCORE</p>
+    <h4>Điều 2:</h4>
+    <p>Người chơi chỉ bắt đầu game khi ấn nút NEW GAME</p>
+    <h4>Điều 3:</h4>
+    <p>Ấn nút ROLLDICE để xoay súc xắc, điểm của mỗi lần quay sẽ được tính vào ô Current. Người chơi có thể quay bao nhiêu lần tùy ý <b>nhưng khi quay vào ô số 1 thì sẽ mất hết điểm ở o Current và bị mất lượt</b> </p>
+    <h4>Điều 4:</h4>
+    <p>Người chơi dùng nút HOLD để lấy điểm ở ô Current</p>
+    <button class="confirm" (click)='handleConfirm()'>Đã hiểu</button>
+  </div>
+</div>

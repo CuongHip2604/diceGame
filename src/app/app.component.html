@@ -1,0 +1,24 @@
+<div class="wrapper clearfix">
+  <app-player
+  [activePlayer]='activePlayer'
+  [scorePlayer]='scorePlayer'
+  [currentScore]='currentScore'
+  [isWinner]='isWinner'
+  (handleEventIsWinner)='handleIsWinner()'
+  ></app-player>
+  <app-controls
+  [isOpenPopap]='isOpenPopap'
+  (handleEventNewGame)='handleEventNewGame()'
+  (handleEventRollDices)='handleRollDice($event)'
+  (handleEventHold)='handleHold($event)'
+  [finalScore]='finalScore'
+  [isPlaying]='isPlaying'
+  (handleEventInput)='handleInput($event)'
+  ></app-controls>
+
+  <app-dices
+  [dices]='dices'></app-dices>
+  <app-popap-rules [isOpenPopap]='isOpenPopap' [isPlaying]='isPlaying' [activePlayer]='activePlayer'
+    [scorePlayer]='scorePlayer' [currentScore]='currentScore' [dices]='dices'
+    (handleEventConfirm)='handleConfirm($event)'></app-popap-rules>
+</div>
