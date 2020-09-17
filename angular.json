@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "diceGame"
+    }
+  },
+  "defaultProject": "diceGame",
+  "cli": {
+    "analytics": "702cf254-cbba-45f7-b482-091bab31b927"
+  }
 }
